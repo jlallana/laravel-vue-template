@@ -6,7 +6,8 @@
         "vscode": {
             "extensions": [
                 "ms-azuretools.vscode-docker",
-                "devsense.phptools-vscode"
+                "devsense.phptools-vscode",
+                "sanderronde.phpstan-vscode"
             ]
         }
     }
