@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Vite server via npm",
+            "name": "NPM",
             "request": "launch",
             "runtimeArgs": [
                 "run",
@@ -15,7 +15,7 @@
             "type": "node"
         },
         {
-            "name": "Launch PHP server and debug",
+            "name": "PHP",
             "type": "php",
             "request": "launch",
             "runtimeArgs": [
@@ -28,6 +28,13 @@
             "serverReadyAction": {
                 "action": "openExternally"
             }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch laravel app",
+            "configurations": ["PHP", "NPM"],
+            "stopAll": true
         }
     ]
 }
